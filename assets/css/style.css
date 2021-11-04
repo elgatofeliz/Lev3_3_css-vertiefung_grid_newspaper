@@ -1,0 +1,108 @@
+/*===========================================
+            General Styles
+===========================================*/   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+padding: 5vh 5vw;
+background-color: #eee;
+}
+
+/*===========================================
+            Header Styles
+===========================================*/            
+
+header{
+    text-align: center;
+}
+
+header>h1{
+    padding-bottom: 2vh;
+}
+
+header>div{
+    display: flex;
+    justify-content: space-around;
+    border-top: 3.5px solid black;
+    border-bottom: 3.5px solid black;
+}
+
+header>div>p{
+    padding: 1vh 0;
+}
+
+/*===========================================
+            Main Styles
+===========================================*/   
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 60px 78vh;
+    gap: 20px;
+}
+
+main>div{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>div>h2{
+    font-size: 2rem;
+    padding-left: 5vw;
+}
+
+main>div>p{
+    padding-right: 5vw;
+}
+
+main>article:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 2fr 3fr;
+    gap: 10px;
+}
+
+main>img{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+}
+
+main>article:nth-of-type(2){
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main>article:nth-of-type(2)>img{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+    height: 100%;
+}
+
+main>article:nth-of-type(2)>img, main>article:nth-of-type(2)>div{
+    border: 5px solid black;
+    padding: 20px;
+    display:grid;
+    place-items: center;
+}
+
+main>article:nth-of-type(2)>div:nth-of-type(1)>h2{
+    font-size: 3rem;
+}
